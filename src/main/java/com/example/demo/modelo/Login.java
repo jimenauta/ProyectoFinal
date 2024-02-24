@@ -11,7 +11,7 @@ public class Login {
 	
 	@Id
 	@Column(name="idlogin")
-	private long id;
+	private Long id;
 	
 	@Column(name="contraseña", length=10, nullable=false )
 	private String contraseña;

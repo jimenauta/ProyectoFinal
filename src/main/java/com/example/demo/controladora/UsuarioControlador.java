@@ -18,38 +18,38 @@ public class UsuarioControlador {
 	@Autowired
 	private UsuarioRepositorio repositorio;
 	
-	@GetMapping("/mirar")
+	@GetMapping("/mirar1")
 	public List<Usuario> mirarusuario(){
 		return this.repositorio.findAll();
 	}
 	
-	@GetMapping("/buscar")
+	@GetMapping("/buscar1")
 	public Usuario buscarusuario(){
 	Long idusuario=123L;
 		return this.repositorio.findById(idusuario).get();
 				}
 	
-	@GetMapping("/guardar")	
+	@GetMapping("/guardar1")	
 	public List<Usuario> guardarusuario(){
-		Usuario e1 = new Usuario (123L,"28abril2005", "Jimena","Garzon" , 1054542789, 658392);
+		Usuario e1 = new Usuario (123L,"28abril1987", "Sebastian","Isaza" , 1054542789, 658392);
 		
-		Usuario e2 = new Usuario (1234L,"10diciembre2004", "Daniel","Correa",1054541576,674822);
+		Usuario e2 = new Usuario (1234L,"10diciembre2005", "Daniel","Correa",1054541576,674822);
 		
-		Usuario e3 = new Usuario (12345L,"18julio1987","Berenice","Guzman", 24714474,692917);
+		Usuario e3 = new Usuario (12345L,"18julio1988","Berenice","Guzman", 24714474,692917);
 		this.repositorio.save(e1);
 		this.repositorio.save(e2);
 		this.repositorio.save(e3);
 		return this.repositorio.findAll();
 	}
 	
-	@GetMapping("/eliminar")
+	@GetMapping("/eliminar1")
 	public List<Usuario> eliminarusuario(){
-		this.repositorio.deleteById(12345L);
+		this.repositorio.deleteById(123L);
 		return this.repositorio.findAll();
 
 	}
 	
-	@GetMapping("/actualizar") 
+	@GetMapping("/actualizar1") 
 	public Usuario actualizartelefono() {
 		Usuario a= this.repositorio.findById(12345L).get();
 		a.setTelefono(780875);

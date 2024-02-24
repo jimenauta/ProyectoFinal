@@ -13,19 +13,19 @@ public class Usuario {
 	@Column(name="idusuario")
 	private long id;
 	
-	@Column(name="fechanacimiento", length=10, nullable=false )
+	@Column(name="fechanacimiento", length=15, nullable=false )
 	private String fechanacimiento;
 	
-	@Column(name="nombres", length=10, nullable=false )
+	@Column(name="nombres", length=15, nullable=false )
 	private String nombres;
 	
-	@Column(name="apellidos", length=10, nullable=false )
+	@Column(name="apellidos", length=15, nullable=false )
 	private String apellidos;
 	
-	@Column(name="cedula", length=10, nullable=false )
+	@Column(name="cedula", length=15, nullable=false )
 	private int cedula;
 	
-	@Column(name="telefono", length=10, nullable=false )
+	@Column(name="telefono", length=15, nullable=false )
 	private int telefono;
 
 	public Usuario() {
@@ -90,6 +90,8 @@ public class Usuario {
 	public void setTelefono(int telefono) {
 		this.telefono = telefono;
 	}
+
+	
 	
 	
 

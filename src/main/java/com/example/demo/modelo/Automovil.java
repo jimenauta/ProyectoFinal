@@ -14,14 +14,14 @@ public class Automovil {
 	private long id;
 	
 	@Column(name="cantidadpuestos", length=10, nullable=false )
-	private String cantidadpuestos;
+	private int cantidadpuestos;
 
 	public Automovil() {
 		super();
 		// TODO Auto-generated constructor stub
 	}
 
-	public Automovil(long id, String cantidadpuestos) {
+	public Automovil(long id, int cantidadpuestos) {
 		super();
 		this.id = id;
 		this.cantidadpuestos = cantidadpuestos;
@@ -35,14 +35,15 @@ public class Automovil {
 		this.id = id;
 	}
 
-	public String getCantidadpuestos() {
+	public int getCantidadpuestos() {
 		return cantidadpuestos;
 	}
 
-	public void setCantidadpuestos(String cantidadpuestos) {
+	public void setCantidadpuestos(int cantidadpuestos) {
 		this.cantidadpuestos = cantidadpuestos;
 	}
 
+	
 	
 	
 	

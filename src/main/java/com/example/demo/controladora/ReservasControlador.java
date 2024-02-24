@@ -30,11 +30,11 @@ public class ReservasControlador {
 	
 	@GetMapping("/guardar2")	
 	public List<Reservas> guardarreserva(){
-		Reservas e1 = new Reservas (123L,"pendiente", "28abril2024","SantaMarta");
+		Reservas e1 = new Reservas (123L,"pendiente", "24Febrero2024");
 		
-		Reservas e2 = new Reservas (1234L,"pendiente", "24diciembre2024","Newyork");
+		Reservas e2 = new Reservas (1234L,"pendiente", "25Febrero2024");
 		
-		Reservas e3 = new Reservas (12345L,"pendiente","19abril2024","Miami");
+		Reservas e3 = new Reservas (12345L,"pendiente","26febrero2024");
 		
 		this.repositorio.save(e1);
 		this.repositorio.save(e2);

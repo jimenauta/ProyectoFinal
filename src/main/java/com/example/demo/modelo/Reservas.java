@@ -18,21 +18,17 @@ public class Reservas {
 	
 	@Column(name="fechareserva", length=10, nullable=false )
 	private String fechareserva;
-	
-	@Column(name="destino", length=10, nullable=false )
-	private String destino;
 
 	public Reservas() {
 		super();
 		// TODO Auto-generated constructor stub
 	}
 
-	public Reservas(long id, String registropago, String fechareserva, String destino) {
+	public Reservas(long id, String registropago, String fechareserva) {
 		super();
 		this.id = id;
 		this.registropago = registropago;
 		this.fechareserva = fechareserva;
-		this.destino = destino;
 	}
 
 	public long getId() {
@@ -58,14 +54,9 @@ public class Reservas {
 	public void setFechareserva(String fechareserva) {
 		this.fechareserva = fechareserva;
 	}
-
-	public String getDestino() {
-		return destino;
-	}
-
-	public void setDestino(String destino) {
-		this.destino = destino;
-	}
+	
+	
+	
 	
 	
 	
