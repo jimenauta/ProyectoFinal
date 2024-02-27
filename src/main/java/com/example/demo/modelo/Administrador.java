@@ -3,6 +3,9 @@ package com.example.demo.modelo;
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
+import jakarta.persistence.JoinColumn;
+
+import jakarta.persistence.OneToOne;
 import jakarta.persistence.Table;
 
 @Entity
@@ -15,6 +18,15 @@ public class Administrador {
 	
 	@Column(name="nombre", length=10, nullable=false )
 	private String nombre;
+	
+	
+	//llave foranea entre la relacion de login y la administrador de uno(login) a uno (administrador)
+		@OneToOne()
+		@JoinColumn(name="inicio", referencedColumnName = "idlogin")
+		private Login ini;
+		
+		
+	
 
 	public Administrador() {
 		super();

@@ -30,7 +30,7 @@ public class DisponibilidadControlador {
 	public List<Disponibilidad> guardardisponibilidad(){
 		Disponibilidad e1 = new Disponibilidad (1L,"1marzo2024", 10, "8:30am", "SantaMarta");
 		
-		Disponibilidad e2 = new Disponibilidad (2L, "2marzo2024", 5, "9:00am", "Barranquilla");
+		Disponibilidad e2 = new Disponibilidad (2L, "2marzo2024", 5, "9:00am", "Barranqui");
 		
 		Disponibilidad e3 = new Disponibilidad (3L,"3marzo2024", 20, "10:00am", "Cartagena");
 		

@@ -9,6 +9,7 @@ import jakarta.persistence.Table;
 @Table(name="disponibilidad")
 public class Disponibilidad {
 	
+	
 	@Id
 	@Column(name="iddisponibilidad")
 	private long id;
@@ -24,6 +25,8 @@ public class Disponibilidad {
 	
 	@Column(name="destino", length=10, nullable=false )
 	private String destino;
+	
+	
 
 	public Disponibilidad() {
 		super();
