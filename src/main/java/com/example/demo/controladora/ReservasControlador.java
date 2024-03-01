@@ -65,7 +65,7 @@ public class ReservasControlador {
 	//consulta 1 de listar todas las reservas del dia 
 	@GetMapping("/buscarfechareserva")
 	public List<Reservas> buscafecha(){
-		return this.repositorio.findByFecha("26febrero2024");
+		return this.repositorio.findByFechareserva("26febrero2024");
 	}
 	
 	//consulta 2 listar los usuarios de un automovil

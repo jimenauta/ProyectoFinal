@@ -9,18 +9,18 @@ import org.springframework.web.bind.annotation.RestController;
 import com.example.demo.modelo.Administrador;
 import com.example.demo.repositorio.AdministradorRepositorio;
 
- 
+  
 @RestController
 @RequestMapping("/ver6/")
 public class AdministradorControlador {
-	
-	@Autowired
+
+	@Autowired 
 	private AdministradorRepositorio repositorio;
 	
 	@GetMapping("/mirar6")
 	public List<Administrador> miraraminstrador(){
 		return this.repositorio.findAll();
-	}
+	} 
 
 	@GetMapping("/guardar6")	
 	public List<Administrador> guardaradministrador(){

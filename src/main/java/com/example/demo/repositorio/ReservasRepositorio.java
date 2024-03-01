@@ -10,7 +10,7 @@ import com.example.demo.modelo.Reservas;
 @Repository
 public interface ReservasRepositorio extends JpaRepository<Reservas, Long> {
 	
-	public List<Reservas> findByFecha(String fechareserva);
+	public List<Reservas> findByFechareserva(String fechareserva);
 
 	
 	
