@@ -4,7 +4,7 @@ import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PostMapping;
+
 import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
@@ -69,10 +69,10 @@ public class ReservasControlador {
 	}
 	
 	//consulta 2 listar los usuarios de un automovil
-	@PostMapping("/buscarusuariosauto")
+	/*@PostMapping("/buscarusuariosauto")
 	public List<Object> buscarauto(@RequestParam ("automovil") String automovil){
 		return this.repositorio.usuaroauto(automovil);
-	}
+	}*/
 	
 	//consulta 3 cancelar la reserva 
 	@GetMapping("/eliminarreserva")

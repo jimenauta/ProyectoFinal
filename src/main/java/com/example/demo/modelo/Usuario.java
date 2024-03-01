@@ -13,6 +13,7 @@ public class Usuario {
 	@Column(name="idusuario")
 	private long id;
 	
+	
 	@Column(name="fechanacimiento", length=15, nullable=false )
 	private String fechanacimiento;
 	
